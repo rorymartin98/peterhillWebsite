@@ -19,8 +19,10 @@
           git clone git://github.com/username/your-repository
           git remote set-url origin git@github.com:username/your-repository.git
           git add -A
-          git config --update user.email "your email" // Now you must add a user
-          git config --update user.name "your name"
+          git config --global user.email "your email" // Now you must add a user
+          git config --global user.name "your name"
           git commit -am "my update msg"
-          git config --update matching // Must change the config committing to matching files
+          git config --global matching // Must change the config committing to matching files
           git push
+
+- Fore more commands: https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html
