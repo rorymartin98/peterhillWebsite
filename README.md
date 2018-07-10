@@ -4,6 +4,7 @@
       > git add -A (To add all)
       > git commit -am "message" (To commit the files)
       > git push (To upload the files)
+      > git pull (To update local directory)
 
 # Creating the SSH Git Root Folders:
 - Create a root directory and cd to it.
