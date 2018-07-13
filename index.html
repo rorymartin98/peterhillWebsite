@@ -4,31 +4,49 @@
         <title> PETER HILL </title> <!--peterhill.org.au-->
         <link rel="stylesheet" type="text/css" href="css/style.css"> <!--jQuery import library?-->
         <link rel="javascript" type="text/javascript" href="js/scripts.js">
-        <meta name="keywords" content="peter, hill">  
+        <meta name="keywords" content="peter, hill">
     </head>
-    <body>
-    <!-- Body Container-->
-    <div id="b_Container">
+    <script src="js/scripts.js"></script>
+    <body onload="scrollFunction()">
+    <!-- Header Container-->
+    <div id="home"></div>
+    <div id="h_Container">
         <!-- Header-->
         <div id="header">
             <p id="h_Title">Peter Hill</p>
         </div>
-        <!-- Header Buttons -->
+            <!-- Header Buttons -->
         <div id="h_Box">
-            <p id="h_Button1">Home</p>
-            <p id="h_Button2">Contact</p>
-            <p id="h_Button3">Blog</p>
-            <p id="h_Button4">Survey</p>
+            <a href="#home" id="h_Button1">Home</a>
+            <a href="#aboutPeter" id="h_Button2">About Peter</a>
+            <a href="#footer" id="h_Button3">Read My Thoughts</a>
+            <a href="#footer" id="h_Button4">Contact</a>
         </div>
+        <div id="overlay"></div>
+    </div>
+    <!-- /Header Container-->
+    <!-- Body Container-->
+    <div id="b_Container">
         <!-- Paralax Div 1 -->
         <div class="bgimg-1">
             <div class="caption">
             <span class="border">SCROLL DOWN</span>
-          </div>
+          </div> 
         </div>
+        <div id="aboutPeter"></div>
+        <!--
         <div id="text_Boxes1">
             <h3 id="h_Align1">INTRODUCTION</h3>
             <iframe id="iframe" scrolling="no" src="text/introduction.html"></iframe>
+        </div>
+        -->
+        <div id="text_Boxes2">
+            <h3 id="h_Align2">ABOUT PETER</h3>
+            <iframe id="iframe" scrolling="no" src="text/aboutPeter.html"></iframe>
+        </div>
+        <div id="text_Boxes3">
+            <h3 id="h_Align2">QUALIFICATIONS</h3>
+            <iframe id="iframe" scrolling="no" src="text/qualifications.html"></iframe>
         </div>
         <!-- Paralax Div 2 -->
         <div class="bgimg-2">
@@ -37,10 +55,7 @@
           </div>
         </div>
         <div id="posRel">
-          <div id="text_Boxes2">
-            <h3 id="h_Align2">ABOUT PETER</h3>
-            <iframe id="iframe" scrolling="no" src="text/aboutPeter.html"></iframe>
-          </div>
+            <!-- Middle Para Content -->
         </div>
         <!-- Paralax Div 3 -->
         <div class="bgimg-3">
@@ -49,16 +64,15 @@
           </div>
         </div>
         <div id="posRel">
-          <div id="text_Boxes2">
-            <h3 id="h_Align2">QUALIFICATIONS</h3>
-            <iframe id="iframe" scrolling="no" src="text/qualifications.html"></iframe>
-          </div>
+            <!-- Middle Para Content -->  
         </div>
         <!-- Paralax Div 4 -->
-        <div class="bgimg-1">
+        <div class="bgimg-4">
+        <a href="#top">
           <div class="caption">
             <span class="border">BACK TO THE TOP</span>
           </div>
+        </a>
         </div>
         <!-- Footer -->
         <div id="footer">
