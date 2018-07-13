@@ -3,7 +3,7 @@
 <!--
 /* Standard Tags */
     body {
-        background-color: #bdbdbd;
+        background-color: transparent;
         padding: 0;
         margin: 0;
         z-index: 1;
@@ -23,7 +23,7 @@
         margin: auto;
         top: 0; 
         background-color: #a5a5a5;
-        opacity: 0.3;
+        opacity: 0.2;
         z-index: 3;
     }
     #h_Container {
@@ -90,15 +90,18 @@
     }
     #aboutPeter {
         position: absolute;
-        margin-top: -179px;
+        margin-top: -215px;
     }
      #text_Boxes1, #text_Boxes2, #text_Boxes3 {
         color: #777777;
         background-color: #ffffff;
-        padding: 50px 80px;
+        padding: 30px 80px 80px 80px;
         text-align: justify;
         margin: auto;
-        opacity: .8;
+        border-top-style: inset;
+        border-right-style: inset;
+        border-bottom-style: inset;
+        border-left-style: inset;
     }
     #text_Boxes1 {
         color:#777777;
@@ -106,37 +109,58 @@
         height: 260px;
     }
     #text_Boxes2 {
-        color:#dddddd;
-        background-color:#282E34;
+        color:#000000;
+        background-color:#ffffff;
+        height: 105px;
+        opacity: 1;
+        width: 80%;
+        border-bottom-style: none;
     }
     #text_Boxes3 {
-        color:#dddddd;
-        background-color:#282E34;
+        color:#000000;
+        background-color:#ffffff;
+        height: 105px;
+        opacity: 1;
+        width: 80%;
+        border-top-style: none;
     }
     #h_Align1, #h_Align2 {
         text-align: center;
+        margin-left: -230px;
     }
     #h_Align2 {
-        color:#ffffff;
+        color:#000000;
+    }
+    #headShot {
+        width: 30%;
+        height: auto;
+        margin-top: 10px;
+        margin-right: -10px;
+        background-color: transparent;
+        position: inherit;
+        float: right;
+        border: groove;
+        opacity: 1;
     }
     #iframe {
         border: none;
-        width: 100%;
-        height: 100%; 
+        width: 68%;
+        height: 120%;
     }
     #cust_Border {
-        background-color:transparent;
+        background-color: transparent;
         font-size:25px;
-        color: #f7f7f7;
+        color: #ffffff;
+        opacity: 1;
     }
     #posRel {
         position: relative;
     }
 
 /* Class Tags */   
-    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
         position: relative;
-        opacity: 0.65;
+        opacity: 1;
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
@@ -148,15 +172,19 @@
     }
     .bgimg-2 {
         background-image: url("../images/img_parallax2.jpg");
-        min-height: 400px;
+        min-height: 76.5%;
     }
     .bgimg-3 {
         background-image: url("../images/img_parallax3.jpg");
-        min-height: 400px;
+        min-height: 50%;
     }
     .bgimg-4 {
         background-image: url("../images/img_parallax4.jpg");
-        min-height: 500px;
+        min-height: 76.5%;
+    }
+    .bgimg-5 {
+        background-image: url("../images/img_parallax5.jpg");
+        min-height: 76.5%;
     }
     .caption {
         position: absolute;
@@ -177,7 +205,7 @@
     
 /* Turn off parallax scrolling for tablets and phones */
     @media only screen and (max-device-width: 1024px) {
-        .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+        .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
             background-attachment: scroll;
         }
     }
