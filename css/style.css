@@ -1,7 +1,7 @@
 /* Style Sheet */
 
 <!--
-/* Standard Tags */
+/* HTML Tags */
     body {
         background-color: transparent;
         padding: 0;
@@ -9,68 +9,64 @@
         z-index: 1;
     }
     h3 {
-      letter-spacing: 5px;
-      text-transform: uppercase;
-      font: 20px "Lato", sans-serif;
-      color: #111;
+        font: 20px "Lato", sans-serif;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        color: #111111;
     }
     
 /* ID Tags */
+    /* Body Containers */
     #overlay {
+        background-color: #a5a5a5;
         position: fixed;
-        width: 100%;
-        height: 140px;
         margin: auto;
         top: 0; 
-        background-color: #a5a5a5;
         opacity: 0.2;
         z-index: 3;
+        width: 100%;
+        height: 140px;
     }
     #h_Container {
+        position: fixed;
+        margin: auto;
+        opacity: 1;
+        z-index: 4;
         height: 180px;
         width: 100%;
-        margin: auto;
         color: #ffffff;
-        opacity: 1;
-        position: fixed;
-        z-index: 4;
     }
     #b_Container {
-        padding-top: 180px;
-        height: 660px;
-        width: 100%;
         margin: auto;
-        color: #ffffff;
         opacity: 1;
         z-index: 5;
+        height: 660px;
+        width: 100%;
+        padding-top: 180px;
+        color: #ffffff;
     }
+    /* Header */
     #header {
-        height: 140px;
-        opacity: 1;
         background-image: url("../images/header.jpg");
         background-color: #7b99a1;
+        height: 140px;
+        opacity: 1;
         text-align: center;
         font-size: 100px;
         font-family: monospace;
-    }
-    .sticky {
-        opacity: 1;
-        top: 0;
-        width: 100%;
-        z-index: 2;
     }
     #h_Title {
         margin: auto;
     }
     #h_Box {
+        background-color: #565656;
+        margin-top: 0px;
         height: 40px;
         opacity: 1;
-        background-color: #565656;
         text-align: center;
         font-size: 20px;
         font-family: monospace;
         letter-spacing: 2px;
-        margin-top: 0px;
     }
     #h_Button1, #h_Button2, #h_Button3, #h_Button4 {
         position: absolute;
@@ -92,72 +88,76 @@
         position: absolute;
         margin-top: -215px;
     }
-     #text_Boxes1, #text_Boxes2, #text_Boxes3 {
-        color: #777777;
+    /* Body Elements */
+    #text_Boxes1, #text_Boxes2, #text_Boxes3 {
         background-color: #ffffff;
-        padding: 30px 80px 80px 80px;
-        text-align: justify;
         margin: auto;
+        padding: 30px 80px 80px 80px;
         border-top-style: inset;
         border-right-style: inset;
         border-bottom-style: inset;
         border-left-style: inset;
+        opacity: 1;
+        color: #777777;
+        text-align: justify;
     }
     #text_Boxes1 {
-        color:#777777;
-        background-color:#ffffff;
         height: 260px;
+        color: #777777;
     }
     #text_Boxes2 {
-        color:#000000;
-        background-color:#ffffff;
         height: 105px;
-        opacity: 1;
         width: 80%;
         border-bottom-style: none;
+        color: #000000;
     }
     #text_Boxes3 {
-        color:#000000;
-        background-color:#ffffff;
         height: 105px;
-        opacity: 1;
         width: 80%;
         border-top-style: none;
+        color: #000000;
     }
     #h_Align1, #h_Align2 {
         text-align: center;
         margin-left: -230px;
     }
     #h_Align2 {
-        color:#000000;
+        color: #000000;
     }
     #headShot {
-        width: 30%;
-        height: auto;
-        margin-top: 10px;
-        margin-right: -10px;
         background-color: transparent;
         position: inherit;
+        height: auto;
+        width: 30%;
+        opacity: 1;
+        margin-top: 10px;
+        margin-right: -10px;
         float: right;
         border: groove;
-        opacity: 1;
     }
     #iframe {
-        border: none;
         width: 68%;
         height: 120%;
+        border: none;
     }
     #cust_Border {
         background-color: transparent;
+        opacity: 1;
         font-size:25px;
         color: #ffffff;
-        opacity: 1;
     }
+    /* Miscellaneous */
     #posRel {
         position: relative;
     }
 
-/* Class Tags */   
+/* Class Tags */
+    .sticky {
+        opacity: 1;
+        top: 0;
+        z-index: 2;
+        width: 100%;
+    }
     .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
         position: relative;
         opacity: 1;
@@ -188,29 +188,29 @@
     }
     .caption {
         position: absolute;
+        width: 100%;
         left: 0;
         top: 50%;
-        width: 100%;
         text-align: center;
         color: #000000;
     }
     .caption span.border {
-        opacity: .9;
         background-color: #1f1f1f;
-        color: #ffffff;
         padding: 18px;
+        opacity: .9;
+        color: #ffffff;
         font-size: 25px;
         letter-spacing: 10px;
     }
     
-/* Turn off parallax scrolling for tablets and phones */
+/* Phone paralax scrolling */
     @media only screen and (max-device-width: 1024px) {
         .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
             background-attachment: scroll;
         }
     }
     
-/* UNIVERSAL Link Colours and Effects */ 
+/* Links */ 
     a:link {
         color: #ffffff;
         text-decoration: none;
