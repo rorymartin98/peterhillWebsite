@@ -163,6 +163,7 @@
     #aboutPeter {
         position: absolute;
         margin-top: -220px;
+        width: 80%;
         min-width: 670px;
     }
     #ap_Container {
